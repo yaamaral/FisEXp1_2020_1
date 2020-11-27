@@ -1,0 +1,39 @@
+\chapter{Apêndice: $(E_f-E_i)/E_i$ a partir de traços e um ângulo}
+\label{deltaE}
+
+
+\vspace{-0.5cm}
+
+Usando as equações para conservação de momento linear e balanço de energia, a variação percentual de energia cinética na colisão com massas iguais pode ser obtida a partir dos comprimentos e ângulos representados na Figura \ref{figcolisaomoedas3}. Chamando a velocidade da moeda A logo antes da colisão de $v_0$, e as velocidades das moedas A e B logo depois da colisão de $v_1$ e $v_2$, respectivamente, temos
+\begin{equation}
+    m_1 v_0 = m_1 v_1 \cos(\theta) + m_2 v_2 \cos(\phi),
+\end{equation}
+\begin{equation}
+    0 = m_1 v_1 \sin(\theta) - m_2 v_2 \sin(\phi),
+\end{equation}
+\begin{equation}
+    E_f - E_i = \frac{1}{2} m_1 v_1^2 +  \frac{1}{2} m_2 v_2^2 -  \frac{1}{2} m_1 v_0^2.
+\end{equation}
+Somando os quadrados das equações para conservação de momento linear em $x$ e em $y$
+\begin{equation}
+    m_1^2 v_0^2 = m_1^2 v_1^2  + m_2^2 v_2^2 + 2 m_1 m_2 v_1 v_2 \cos(\theta+\phi).
+\end{equation}
+Logo,
+\begin{equation}
+    E_f - E_i =   \frac{1}{2} m_2 \left(1-\frac{m_2}{m_1}\right) v_2^2  -  m_2 v_1 v_2 \cos(\theta+\phi),
+\end{equation}
+
+\begin{equation}
+   \frac{ E_f - E_i}{E_i} =\frac{-1}{1-\frac{E_f}{E_i-E_f}}
+   =\frac{-1}{1-
+   \displaystyle {\frac{     \sqrt{\frac{m_1}{m_2}}\frac{v_1}{v_2} + \sqrt{\frac{m_2}{m_1}}\frac{v_2}{v_1}    }
+   {    \left(1-\frac{m_2}{m_1}\right) \sqrt{\frac{m_2}{m_1}}\frac{v_2}{v_1} -2 \cos(\theta+\phi)}}  
+   }.
+\end{equation}
+Se as moedas são iguais, as massas são iguais e também as forças de atrito entre cada moeda e a superfície. Neste caso, usando o teorema trabalho-energia cinética (aqui, $mv^2/2=F_{at} L$):
+\begin{equation}
+\frac{E_f - E_i}{E_i} = \frac{-1}{1+\displaystyle {\frac{\sqrt{\frac{L_A}{L_B}}+\sqrt{\frac{L_B}{L_A}}}{2~ \cos(\theta+\phi)}}}.
+\label{eqEa}
+\end{equation}
+A Equação~\ref{eqEa} mostra que, para moedas iguais, a variação percentual de energia cinética na colisão pode ser obtida medindo apenas comprimentos e um ângulo entre trajetórias das duas, sem nem mesmo uma calibração para os comprimentos dos traços. Os dois parâmetros relevantes são (i) a razão entre entre os comprimentos dos traços depois da colisão, $L_A/L_B$, e (ii) a soma dos ângulos $\theta$ e $\phi$.  
+

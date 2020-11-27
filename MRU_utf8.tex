@@ -1,0 +1,68 @@
+\chapter{Determinação da velocidade de um móvel em movimento retilíneo uniforme}~\label{mru}
+
+\vspace{-1.1cm}
+Neste experimento vamos estudar o movimento de um carrinho numa superfície horizontal com atrito desprezível (trilho de ar, apêndice~\ref{trilho}) e determinar a sua velocidade. Para isto vamos utilizar um sistema de video (gravação de um filme com uma câmera digital) e o programa ImageJ para levantamento de dados. Que hipóteses precisam ser válidas para que o carrinho descreva um movimento retilíneo uniforme ? 
+
+\section*{Procedimento experimental}
+%\vspace{-0.5cm}
+
+\begin{num}
+\item Verifique que o trilho de ar esteja nivelado. Se não estiver, proceda ao nivelamento deste com a ajuda de seu professor. Não mexa nos parafusos do trilho sozinho.
+\item Coloque o tripé com a câmera a uma distância tal que o trilho completo fique no seu campo de visão procurando que a mesma fique o mais centrada possível.
+\item Verifique que a câmera não esteja torta para que o trilho fique horizontal na imagem.
+\item Verifique as configurações da câmera de acordo com o Apêndice~\ref{image}.
+\item Pense como vai impulsionar o carrinho e em que momento vai fazer o registro para ter certeza de que o mesmo esteja se movimentando com MRU. 
+\item Simule a coleta de dados antes de realizar o experimento. Escreva no seu caderno de laboratório o observado.
+\item Faça um filme do movimento do carrinho para apenas um percurso sobre o trilho. 
+\end{num}
+
+\vspace{-0.5cm}
+\section*{Levantamento de dados}
+
+A análise do filme vai ser realizada utilizando o programa ImageJ.  Este programa de análise de imagens é gratuito e pode ser usado nos sistemas operacionais do Windows, Mac e Linux. Para baixá-lo e instalar no seu computador basta acessar o link: \url{http://rsbweb.nih.gov/ij/download.html}.
+As explicações de como utilizar o programa ImageJ estão no Apêndice~\ref{image}. Podemos realizar a leitura dos dados de duas formas: Leitura Manual ou Leitura Automatizada da posição do carrinho. Para este experimento vamos realizar a Leitura Manual da posição do carrinho.
+
+\begin{num}
+\item Meça a posição $p$ em pixels de um ponto de referência no carrinho para diversos instantes de tempo ao longo do percurso (diversos quadros do vídeo). Note que os pontos não precisam ser consecutivos, eles devem ficar espalhados ao longo do trilho. Por quê? Lembre que o tempo entre dois pontos consecutivos $\Delta t = 1/n$, onde $n$ é o número de quadros por segundos. 
+\item Estime a incerteza $\delta p$ para estas medidas e anote a justificativa para esta estimativa.
+\item Construa no seu caderno de laboratório uma tabela de medidas de posição $p$ como função do tempo, como mostrado nas três primeiras colunas da Tabela 2. O número de posições medidas $N$ deve ser maior que 12.  
+\item Determine a constante de calibração que permite transformar as medidas em pixels $p$ para medidas $x$ em cm. Para isto, determine uma distância conhecida (distância de referência em cm) na imagem e veja a quantos “pixels” corresponde esta distância. A razão entre estas duas distâncias será chamada de constante de calibração $C$. Discuta com seu professor qual é a melhor distância de referência que pode escolher (pode ser o comprimento do trilho, ou o tamanho do carrinho, etc.). Justifique a sua resposta. 
+\item Utilizando a constante de calibração complete as duas últimas colunas da seguinte tabela:
+
+\begin{table}[h]
+\begin{center}
+%\vspace{0.3cm}
+%\hspace{-1cm}
+  \begin{tabular}[m]{ | c | c | c | c | c | c |} \hline	
+    ~~P~~ & ~~t (s)~~ & x (pixel) & $\delta$ (pixel) & ~$x$ (cm)~ & ~$\delta x$ (cm)~ \\ \hline
+    1 &	&	&	&	&		\\ \hline
+    2 &	&	&	&	&	 	\\ \hline
+    ... &	&	&	&	&		\\ \hline
+    $N$	&	&	&	&	&	\\ \hline
+  \end{tabular}
+   %\caption*{Tabela 2: Tabela de posição em função do tempo para o carrinho.}
+\end{center}
+\end{table}
+
+%\item Determine a incerteza associada à constante de calibração. Pode considerá-la desprezível?  Discuta com seu professor. Justifique.
+
+\end{num}
+
+\vspace{-1.4cm}
+\section*{Análise de dados}
+
+\begin{num}
+\item A partir da tabela construída, realize um gráfico de posição em função do tempo, no papel milimetrado. Para isto deve-se escolher uma escala adequada (tendo em conta o valor mínimo e máximo medido) que deve ser previamente desenhada na folha (Sessão~\ref{plot} da parte Conceitos Básicos). 
+\item Confira se os pontos seguem o comportamento esperado e se são verificadas as hipóteses. Discuta os seus resultados.
+\item {\bf Método gráfico:} Trace ``no olho" a melhor reta que ajuste seus dados.  A partir da reta, calcule a velocidade do carrinho através da determinação do coeficiente angular. Considere uma incerteza relativa de 6\%.
+\item {\bf Método de Mínimos Quadrados:} Determine a velocidade do carrinho realizando um ajuste linear. Para isto utilizaremos o programa QtiPlot (Apêndice~\ref{QtiPlot}).
+\item Compare os resultados para cada método. Discuta.
+\end{num}
+
+\vspace{-0.7cm}
+\section*{Opcional} 
+
+A partir da tabela construída das posições do carrinho em função do tempo, calcule a velocidade instantânea para todos os pontos medidos e determine a velocidade média do carrinho, o seu desvio padrão e a sua incerteza associada. Compare o resultado achado com os valores de velocidade obtidas pelos métodos gráfico e de mínimos quadrados. Os resultados são compatíveis?
+
+{\bf Observação:} Sempre guarde os videos utilizados na sua análise de dados.  Pode ser que precise utilizá-los novamente (ou que seu professor precise deles). 
+

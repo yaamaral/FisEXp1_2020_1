@@ -1,0 +1,131 @@
+
+\chapter{Determinação do tempo de queda de uma moeda  -- Tratamento estatístico dos dados}
+
+
+\vspace{-0.7cm}
+Neste experimento determinaremos o tempo de queda de uma moeda, solta do repouso de uma altura de 1,5 m repetidas vezes. Cada grupo deve apresentar um conjunto de medidas independentes, contendo 120 medições. A partir destas medições vamos estudar os conceitos de flutuações aleatórias, tratamento estatístico dos dados e estudo de efeitos sistemáticos. 
+
+Planejem seu experimento e comecem a fazer as anotações nos seus cadernos de laboratório. Para todos os experimentos que faremos nesse curso, cada um de vocês deve elaborar um pequeno texto no caderno para os seguintes tópicos: 
+
+\begin{enumerate}
+\item {\bf Introdução }
+\item {\bf Procedimento Experimental}
+\item {\bf Análise de Dados}
+\item {\bf Discussão dos Resultados}
+\end{enumerate}
+
+Eventualmente, esses tópicos poderiam ser organizados em um relatório (veja o Apêndice B da apostila de conceitos básicos). Ainda não exigiremos a elaboração de um relatório completo para esse experimento, mas, 
+para cada um desses itens, preparamos algumas perguntas para vocês pensarem,  discutirem entre si e com seu professor. A partir dessa discussão, façam suas anotações. 
+
+\section{Introdução}
+
+\begin{enumerate}
+\item Qual o objetivo e a motivação desse experimento?
+\item De acordo com as leis da Física que você conhece, qual deveria ser o tempo de queda da moeda? 
+\end{enumerate}
+
+\vspace{-0.6cm}
+\section{Procedimento Experimental}
+
+\begin{enumerate}
+\item Vocês podem medir o tempo diretamente ? Que instrumento vão utilizar ? Qual a {\bf resolução} desse instrumento?
+\item Qual a melhor forma de montar o seu experimento, a fim de tentar garantir que a altura de queda esteja sempre no intervalo (1,50 $\pm$ 0,02)$\,$m e que a moeda caia sempre do repouso?
+
+\item Registre seus dados na forma de uma tabela, em ordem cronológica, como mostrado nas duas primeiras colunas da Tabela~1. Vocês podem também construir a tabela diretamente em um programa de planilha no computador (por exemplo Excel, Open Office, Google Sheets), e posteriormente imprimir (ou fazer uma captura de tela) para anexar ao relatório e ao caderno de laboratório.
+
+\end{enumerate}
+
+\begin{center}
+{{\bf Tabela\,1:} Medições realizadas}\vspace{0.2cm}
+
+  \begin{tabular}[m]{ l | c | c | c | c |}
+   \cline{2-5}
+    &   & &  &  \\
+    &  ~~~$i$~~~ & ~~~$t_i$~~~ & $\delta_i = t_i - \bar{t}$ & $\delta_i^2 = (t_i - \bar{t})^2$ \\\cline{2-5}
+   & 1 & & & \\
+   & 2 & & & \\
+   & 3 & & & \\
+   & ... & & & \\
+    &  120& & &  \\ \cline{2-5}
+%    Somas & & & & \\ \cline{2-5}
+  \end{tabular}
+  \label{tab:Integ}
+\end{center}
+
+
+\section{Análise de Dados e Discussão dos Resultados}
+Vocês certamente encontraram mais de um valor como resultado da medida direta do tempo de queda. Com base nesses valores, como podem apresentar o resultado dessa medição? Conforme explicado na Seção I.2 %%\ref{stat}%%
+de  Conceitos Básicos da Apostila, a melhor forma de apresentar essa medida experimental é realizando uma análise estatística dos dados obtidos. Para entender melhor o significado dessa análise, propomos as seguintes atividades:
+
+\subsection*{Parte I: Análise estatística dos dados}
+\vspace{-0.4cm}
+
+\begin{enumerate}
+\item Considerem o conjunto de 120 medidas. Para 6 conjuntos independentes de 10 medições consecutivas, calculem o valor médio, desvio padrão e a incerteza do valor médio (Capítulo~2 da parte  de Conceitos Básicos). Utilize as últimas colunas da Tabela~\ref{tab:Integ} para auxiliar nos cálculos.
+
+\item Resumam os resultados obtidos para os 6 subconjuntos dos dados colocando-os na Tabela~\ref{tab:10med} e observem como variam o valor médio e o desvio padrão. O que podem dizer sobre os valores encontrados? Para o experimento que estão fazendo, 10 medidas é uma quantidade suficiente para se determinar o tempo de queda ? Justifiquem suas respostas. 
+
+\renewcommand{\arraystretch}{1.5}
+
+\begin{center}
+{{\bf Tabela\,2:} Valor médio, desvio padrão e incerteza para subgrupos de 10 medições independentes.} 
+  \begin{tabular}{|c|c|c|c|c|} \hline
+  \bf Medições & \bf N & \bf Valor Médio ($\;\;\;\;\;$) & \bf Desvio Padrão ($\;\;\;\;\;$) & \bf Incerteza ($\;\;\;\;\;$) \\ \hline
+  Grupo 1 & 10 & & & \\ \hline
+  Grupo 2 & 10 & & & \\ \hline
+  Grupo 3 & 10 & & & \\ \hline
+  Grupo 4 & 10 & & & \\ \hline
+  Grupo 5 & 10 & & & \\ \hline
+  Grupo 6 & 10 & & & \\ \hline
+  \end{tabular}
+  \label{tab:10med}
+\end{center}
+
+\item Calcule o valor médio, desvio padrão e a incerteza do valor médio para: (a) as 20 últimas medidas, (b) as 60 primeiras medidas e (c) para o conjunto completo de 120 medidas. Coloquem esses valores na Tabela~\ref{tab:2060120med} e discutam como  variam estas três grandezas com respeito ao número de medidas. Analisem se as 120 medidas foram suficientes para determinar o tempo de queda. 
+
+
+\begin{center}
+{{\bf Tabela\,3:} Valor médio, desvio padrão e incerteza para subgrupos com diferentes números de medições.}
+
+  \begin{tabular}{|c|c|c|c|} \hline
+  \bf N & \bf Valor Médio ($\;\;\;\;\;$)& \bf Desvio Padrão ($\;\;\;\;\;$) &  \bf Incerteza ($\;\;\;\;\;$)\\ \hline
+   20 & & & \\ \hline
+   60 & & & \\ \hline
+  120 & & & \\ \hline
+\end{tabular}
+\label{tab:2060120med}
+\end{center}
+\vspace{0.3cm}
+
+\item Analisem como se compara o valor médio encontrado com o valor de referência, igual a $t_{q}= (0,554\,\pm\,0,004\,$)~s.  Caso existam efeitos sistemáticos, discutam sobre eles e como poderiam evitá-los refazendo as medições (ver seção I.1  de Conceitos Básicos da Apostila).
+
+\item Por convenção, utilizamos como definição para a incerteza de cada medida realizada, o valor de $\sigma$. Discutam o resultado da comparação entre o valor de $\sigma$ encontrado para o conjunto de 120 medições com a precisão do cronômetro utilizado.  
+
+\item Calculem para o conjunto de 120 medições a fração de medidas contidas nos intervalos $[\bar{t}-1\sigma, \bar{t}+1\sigma]$, 
+$[\bar{t}-2\sigma, \bar{t}+2\sigma]$, $[\bar{t}-3\sigma, \bar{t}+3 \sigma]$.  Em um procedimento sujeito somente a flutuações aleatórias, as frações esperadas para estes intervalos são aproximadamente $68,3\%$, $95,4\%$ e $99,7\%$. Note então que a convenção mais adotada, de utilizar como incerteza o valor do desvio padrão, corresponde a adotar um intervalo de incerteza que conteria aproximadamente $68\%$ dos valores obtidos, caso o processo de medida fosse repetido muitas vezes. Quando não conhecemos bem nosso processo de medida, a realização de uma análise estatística permite também a melhor determinação da incerteza das medidas individuais.\footnote{Essas frações decorrem de um modelo matemático que descreve o comportamento de medidas somente sujeitas a flutuações aleatórias. Esse modelo será discutido na Física Experimental II, mas quem quiser se aprofundar pode olhar a Seção  I.7 %%~\ref{gauss}
+ de Conceitos Básicos da Apostila.} 
+
+\end{enumerate}
+
+\subsection*{Parte II:  Representação gráfica dos conjuntos de medidas}
+
+\begin{enumerate}
+\setcounter{enumi}{6}
+
+\item Com base na Seção I.4 de Conceitos Básicos da Apostila, construa um histograma de frequência relativa para os dados em uma  folha de papel milimetrado. Lembrem que o número adequado de barras depende do conjunto de dados e do número total de medições. Neste caso particular, o número aconselhável de barras fica entre 6 e 10. 
+ 
+\item Marquem no gráfico, as posições dos valores médios encontrados. As medições se distribuem simetricamente ao redor do seu valor médio ? O que isso significa e qual o tipo de incerteza está sendo observada?
+
+\item Desenhem sobre o histograma dois segmentos de reta representando o intervalo $[\bar t-\sigma, \bar t+\sigma]$. Observem a concentração dos dados nesse intervalo. 
+
+\item Analisem no histograma o valor médio e desvio padrão.  O que é possível concluir sobre os processos de medida empregados ? Discutam em termos de desvios sistemáticos e flutuações aleatórias. 
+
+\end{enumerate}
+
+\vspace{-0.9cm}
+\section*{Opcional} 
+
+Realize novamente as suas medidas tendo em conta os cuidados discutidos para eliminar suas incertezas sistemáticas. Para este conjunto de 120 medições, calcule o valor médio, o desvio padrão e a incerteza do valor médio e compare com o valor de referência. Conseguiu eliminar as incertezas sistemáticas?  Discuta. 
+
+
+  

@@ -1,0 +1,164 @@
+% --------------------------------------------------------------------
+% --------------------------------------------------------------------
+% Modelo de Trabalho Acadêmico utilizando classe repUERJ para elaboração
+% de teses, dissertação e trabalhos monográficos em geral.
+%
+% Este arquivo está editado na codificação de caracteres UTF-8.
+%
+% As referencia estão baseadas no modelo bibtex e citação em autor-data
+%
+% Este modelo foi criado por Dr. Luís Fernando de Oliveira.
+% Professor Adjunto do Departamento de Física Aplicada e Termodinâmica
+% Instituto de Física Armando Dias Tavares
+% Universidade do Estado do Rio de Janeiro - UERJ
+%
+% A classe repUERJ.cls foi criada a partir do código original
+% disponibilizado pelo grupo CódigoLivre (coordenado por
+% Gerald Weber).
+% Foram feitas adequações para implementação das normas de elaboração
+% de teses e dissertações da UERJ.
+%
+% Os estilos repUERJformat.sty codificam os elementos pré-textuais e
+% pós-textuais.
+% O estilo repUERJpseudocode.sty codifica a elaboração de algoritmos
+% utilizando um glossário desenvolvido por mim (Luís Fernando), o mesmo
+% usado em meu curso de Física Computacional.
+%
+% Todo este material está disponível também no meu site
+%      http://sites.google.com/site/deoliveiralf
+%
+% As normas da UERJ para elaboração de teses e dissertações pode ser
+% obtidas no documento disponível no site
+%      http://www.bdtd.uerj.br/roteiro_uerj_web.pdf
+%
+% Agradecimentos ao grupo da Rede Sirius - BDTD e à Biblioteca Setorial
+% da Física.
+% --------------------------------------------------------------------
+% --------------------------------------------------------------------
+%
+\documentclass[a4paper,12pt,oneside,onecolumn,final,fleqn]{repUERJ}
+% ---
+% Pacotes fundamentais
+% ---
+\usepackage[brazil]{babel}  % adequação para o português Brasil
+\usepackage[utf8]{inputenc} % Determina a codificação utilizada
+                            % (conversão automática dos acentos)
+\usepackage{makeidx}        % Cria o índice
+\usepackage{hyperref}       % Controla a formação do índice
+\usepackage{indentfirst}    % Endenta o primeiro paragrafo de
+                            % cada seção.
+\usepackage{graphicx}       % Inclusão de gráficos
+\usepackage{subfig}
+\usepackage{amsmath}        % pacote matemático
+% ---
+% Pacote auxiliar para as normas da UERJ
+% ---
+\usepackage[frame=no,algline=yes,font=default]{repUERJformat}
+\usepackage{repUERJpseudocode}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, calc, xcolor}
+% ---
+% Pacotes de citacoes
+% ---
+%\usepackage[alf]{abntex2cite}
+
+% ********************************************************************
+% ********************************************************************
+% Informações de autoria e institucionais
+% ********************************************************************
+% ********************************************************************
+
+%---------------------------------------------------------------------
+% Imagens pretextuais (precisam estar no mesmo diretório deste arquivo .tex)
+%---------------------------------------------------------------------
+
+\logo{logo_uerj_cinza.png}
+\marcadagua{marcadagua_uerj_cinza.png}{1}{160}{255}
+
+%---------------------------------------------------------------------
+% Informações da instituição
+%---------------------------------------------------------------------
+
+\instituicao{Universidade do Estado do Rio de Janeiro}
+            %{centro}
+            {Centro de Tecnologia e Ci\^encias}
+            {Instituto de F\'isica Armando Dias Tavares}
+
+%---------------------------------------------------------------------
+% Informações da autoria do documento
+%---------------------------------------------------------------------
+
+\autor{Mariana}
+      {Soeiro}
+      {M. S.}
+
+\titulo{Estudo da Reconstrução e Identificação dos Fótons no Experimento ATLAS}
+% se não for usar a quarta palavra chave, deixar o campo vazio: {}
+\palavraschaves{ATLAS}
+               {B\'oson de Higgs}
+               {ALP}
+               {}
+
+\title{Estudo da Reconstrução e Identificação dos Fótons no Experimento ATLAS}
+\keywords{first keyword}
+         {second keyword}
+         {third keyword}
+         {}
+
+\orientador{Prof. Dra.}
+           {Marcia}{Begalli}
+           {IF -- UERJ}
+
+%coorientador é opcional
+\coorientador{Prof. Dra.}
+             {Yara}{ do Amaral Coutinho}
+             {IF-- UFRJ}
+
+%---------------------------------------------------------------------
+% Grau pretendido (Doutor, Mestre, Bacharel, Licenciado) e Curso
+%---------------------------------------------------------------------
+
+\grau{Mestre} 
+\curso{F\'isica}
+
+% área de concentração é opcional
+%\areadeconcentracao{área}
+
+%---------------------------------------------------------------------
+% Informações adicionais (local, data e paginas)
+%---------------------------------------------------------------------
+
+\local{Rio de Janeiro}
+\data{06}{Agosto}{2020}
+
+% ********************************************************************
+% ********************************************************************
+% Configurações de aparência do PDF final
+% ********************************************************************
+% ********************************************************************
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+%\definecolor{apricot}{RGB}{251,206,177}
+
+% informações do PDF
+\hypersetup{
+  %backref=true,
+  %pagebackref=true,
+  %bookmarks=true,
+  unicode=false,
+  pdftitle={\UERJtitulo},
+  pdfauthor={\UERJautor},
+  pdfsubject={\UERJpreambulo},
+  pdfkeywords={PALAVRAS}{CHAVES}{\chaveA}{\chaveB}{\chaveC}{\chaveD},
+  pdfproducer={\packagename},       % producer of the document
+  pdfcreator={\UERJautor},
+  colorlinks=true,       % false: boxed links; true: colored links
+  linkcolor=black,       % color of internal links blue
+  citecolor=black,       % color of links to bibliography blue
+  filecolor=black,       % color of file links magenta
+  urlcolor=black,
+  bookmarksdepth=4
+}

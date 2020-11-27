@@ -1,0 +1,232 @@
+% Roteiro Fisica Experimental I
+%**********************************
+
+% Configuração General
+
+\documentclass[12pt,a4paper,]{book}
+%\documentclass[oneside]{book}
+%\documentclass[12pt,a4paper,draft]{book}
+%\documentclass[12pt,draft]{report}
+%\documentclass[12pt]{report}
+
+% Options possibles : 10pt, 11pt, 12pt (tamanho da fonte)
+%   oneside, twoside (recto simple, recto-verso)
+%   draft, final (estado de desenvolvimento)
+
+\usepackage[portuguese]{babel} 
+
+%\usepackage[latin1]{inputenc} % LaTeX, comprends les accents !
+\usepackage[applemac]{inputenc}
+% margins 
+\usepackage[margin=2.cm,top=2.cm]{geometry} 
+%\usepackage[showframe]{geometry}
+\usepackage{textpos}
+
+
+\textwidth 16.7cm
+\textheight 23.5cm
+%\oddsidemargin 1.0cm
+%\setlength{\hoffset}{-0.7cm}
+%\evensidema	rgin 0.9cm
+%\topmargin 7.5cm
+%\topmargin -1.5cm
+\parindent 0cm
+\parskip 0.5cm
+%
+%\input epsf.tex
+\usepackage[pdftex]{graphicx}
+\usepackage[font=small,labelfont=sl]{caption}
+%links
+\usepackage{hyperref}
+%\usepackage[dvips]{graphicx}
+%\usepackage{pslatex}
+%\usepackage{epsfig}
+\usepackage{array}
+\usepackage{fancyheadings}
+\setlength{\headheight}{25pt} 
+%\usepackage[spanish]{babel}
+%\usepackage[latin1]{inputenc}
+\usepackage{palatino}
+\usepackage{mathtools}
+%\usepackage{amsmath}
+\usepackage{color}
+ \definecolor{gray}{RGB}{128,128,128}
+%
+\usepackage{subfigure} 
+\usepackage{enumerate}
+\usepackage{mathabx}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{verbatim}
+\renewcommand{\arraystretch}{1.5}
+%
+\usepackage{hyperref}
+%
+\usepackage{setspace}
+\singlespacing
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{0.5cm}{-0.2cm}
+%\onehalfspacing
+%\doublespacing
+%\setstretch{<factor>} % for custom spacing
+
+\usepackage[Bjornstrup]{fncychap}
+%Sonny - Conny - Lenny - Glenn - Renje - Bjarne - Bjornstrup
+
+
+  \newcommand\headerdisplay[1]{%
+      \huge
+      \vskip.5\baselineskip
+      \filcenter\MakeUppercase{#1}%
+      \vskip.0\baselineskip
+    }
+
+\renewcommand\thepart{\Roman{part}}
+    \titleclass{\part}{top} % make part like a chapter
+    \titleformat{\part}[frame]
+      {\normalfont}
+      {\filleft{~~~~~\Large PARTE}{\Large\enspace\thepart\enspace}}
+      {10pt}
+      {\headerdisplay}
+    \titlespacing*{\part}{0pt}{150pt}{20pt}
+
+
+\makeatletter\@addtoreset{chapter}{part}\makeatother%
+%*****************************************************
+%
+\voffset 1cm
+\pagestyle{fancyplain}
+\addtolength{\headwidth}{\marginparsep}
+\addtolength{\headwidth}{0.0\marginparwidth}
+\addtocounter{secnumdepth}{1}
+\renewcommand{\chaptermark}[1]%
+                 {\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]%
+                 {\markright{\thesection\ #1}}
+\lhead[\fancyplain{}{\bfseries\thepage}]%
+            {\fancyplain{}{\sffamily\bfseries\rightmark}}
+\rhead[\fancyplain{}{\sffamily\bfseries\leftmark}]%
+            {\fancyplain{}{\bfseries\thepage}}
+\cfoot{}
+
+
+\newenvironment{num}{
+\begin{enumerate}
+  \setlength{\itemsep}{8pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{enumerate}}
+
+\newenvironment{iten}{
+\begin{itemize}
+  \setlength{\itemsep}{3pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{itemize}}
+
+\newenvironment{descrip}{
+\begin{description}
+  \setlength{\itemsep}{3pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{description}}
+
+
+%\makeatletter
+%\renewcommand{\chapter}{\@startsection
+%        {chapter}
+%       {0}
+%       {0mm}
+%       {5\baselineskip}
+%       {3\baselineskip}
+%       {\newpage
+%        \raggedright
+%       \normalfont\Huge\textbf}}
+
+%\makeatother
+
+\usepackage{etoolbox}
+
+\makeatletter
+\pretocmd{\chapter}{\addtocontents{toc}{\protect\addvspace{-15\p@}}}{}{}
+\pretocmd{\section}{\addtocontents{toc}{\protect\addvspace{0\p@}}}{}{}
+\renewcommand\@dotsep{200}
+\makeatother
+
+\usepackage{color}
+
+
+%\usepackage{draftwatermark}
+%\SetWatermarkColor[rgb]{0.5,0.6,0.6}
+%\SetWatermarkText{EM EDIÇAO}
+%\SetWatermarkScale{0.8}
+
+
+%*****************************************************
+% Começo do Documento
+
+\begin{document}
+
+\input{portadacb}
+
+% Listas de tablas y afines
+
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+%%%%\newpage
+
+%\input{antes}
+
+
+
+%\section*{Introdução}
+%\input{Estrutura}
+
+%\part{Experimentos -- Roteiros}
+
+%\input{QuedaLivre}
+%\input{Volume}
+%\input{PlanoInclinado}
+%\input{Colisoes}
+%\input{Rolamento}
+
+\part[Guia de Conceitos Básicos para Análise de Dados]{Guia de Conceitos Básicos para Análise de Dados}
+\setcounter{chapter}{0}
+\input MedidasIncertezas.tex
+\input MedidasDiretasIndiretas.tex
+\input AlgarismosSignificativos.tex
+\input HistogramaGraficos.tex
+\input MinimosQuadrados.tex
+\input VelocidadeInstantanea.tex
+\input DistribuicaoGaussiana.tex
+%
+%\input{Capitulo1}
+%\let\cleardoublepage\clearpage
+%\input{Capitulo2}
+%\input{Capitulo3}
+%\input{Capitulo4}
+%\input{Capitulo5}
+
+\part{Exercícios}
+%\setcounter{chapter}{0}
+\input{EE1}
+\input{EE2}
+%\input{EE3}
+%\input{EE4}
+
+\part{Apêndices}
+\appendix 
+\input{UsoCaderno}
+\input{ComoEscreverRelatorio}
+\input{UsoPaquimetro}
+%\input{TrilhoAr}
+%\input{UsoSistemaVideo}
+
+\input{UsoQtiPlot}
+
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

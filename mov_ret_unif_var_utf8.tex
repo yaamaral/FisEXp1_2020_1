@@ -1,0 +1,39 @@
+
+\chapter   {Movimento Retilíneo Uniformemente Variado (MRUV)}
+\label{sec:mruv}
+\vspace{-0.7cm}
+
+Se a força resultante sobre uma partícula de massa $m$ for, $\vec{F}$, a  segunda lei de Newton diz que:
+\begin{equation}
+\label{eqA1}
+\vec{F}=m\vec{a},
+\end{equation}
+com $\vec{a}$ sendo o vetor aceleração da partícula. No caso de $\vec{F}$ ser uma força constante,
+{\it viz.} não depende nem do tempo, nem da posição da partícula e nem da velocidade da mesma, da Eq.(\ref{eqA1}) vemos que 
+a aceleração $\vec{a}$ é constante. Assim, a Eq.(\ref{eqA1}) pode ser facilmente integrada para obtermos:
+\begin{equation}
+\label{eqA2}
+\int_{t_0}^{t}\vec{F}dt=m\int_{t_0}^{t} \vec{a}dt\Longrightarrow \vec{F}(t-t_0)=m(\vec{v}-\vec{v}_0)
+\Longrightarrow \vec{v}=\vec{v}_0+\frac{\vec{F}}{m} (t-t_0),
+\end{equation}
+com $\vec{v}:=\vec{v}(t)$ e $\vec{v}_0:=\vec{v}(t_0)$.
+Integrando temporalmente mais uma vez ambos os membros da Eq.(\ref{eqA2}) obtemos:
+\begin{equation}
+\vec{r}=\vec{r}_0+\vec{v}_0(t-t_0)+\frac{1}{2}\frac{\vec{F}}{m}(t-t_0)^2,
+\end{equation}
+com $\vec{r}:=\vec{r}(t)$ sendo a posição da partícula como função do tempo e 
+$\vec{r}_0:=\vec{r}(t_0)$ a sua posição inicial.
+\par
+Vamos supor agora que a força resultante 
+$\vec{F}$ é paralela à velocidade inicial $\vec{v}_0$. Como a soma vetorial de vetores paralelos 
+continua sendo um vetor na mesma direção que os vetores somados, de acordo com a Eq.(\ref{eqA2}), a velocidade $\vec{v}(t)$ é paralela a $\vec{v}_0$ para todo tempo. Portanto trata-se 
+de um movimento retilíneo. Como também a aceleração é constante o movimento se denomina 
+Movimento Retilíneo Uniformemente Variado (MRUV). Sem perda de generalidade podemos 
+chamar de eixo ``$y$'' o eixo coordenado na direção de movimento,  e as equações de movimento,  Eqs.(\ref{eqA1}) e (\ref{eqA2}), nessa direção são:
+\begin{eqnarray}
+y&=&y_0+v_{y0}(t-t_0) +\frac{1}{2} \frac{F}{m}(t-t_0)^2,\\
+v_y&=&v_{y0}+\frac{F}{m}(t-t_0),
+\end{eqnarray}
+com $y:=y(t)$ e $v_y:=v_y(t)$ e as condições iniciais, $y_0:=y(t_0)$ e $v_{y0}:=v_y(t_0)$.
+
+

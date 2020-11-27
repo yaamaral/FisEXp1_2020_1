@@ -1,0 +1,14 @@
+\documentclass{article}
+\textwidth=8cm
+\parindent=0pt
+
+\usepackage{url}
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\makeatother
+\begin{document}
+\rule{\linewidth}{1pt}
+
+foo bar baz \url{very-long-url-very-long-url-very-long-url-very-long-url-very-long-url-}
+
+\end{document}

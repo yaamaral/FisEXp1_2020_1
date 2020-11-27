@@ -1,0 +1,22 @@
+\chapter{Determinação da velocidade instantânea}
+\label{sec:vinst}
+
+No movimento uniformemente acelerado a velocidade da partícula em um instante $t$ pode ser calculada a partir da velocidade média calculada entre os instantes $t + \Delta t$ e $t - \Delta t$ com $\Delta t$ constante. Isto é:
+\begin{equation}
+< v(t) > = \frac{x(t+ \Delta t) - x (t - \Delta t)}{2 \Delta t}
+\end{equation}
+\noindent
+
+Assim, para um conjunto de medições de posição em função do tempo, podemos calcular a velocidade em cada ponto ($i$) a partir das medições de tempo e posição do ponto posterior ($t_{i+1}$ e $x_{i+1}$) e anterior ($t_{i-1}$ e $x_{i-1}$), utilizando a fórmula: 
+\begin{equation}
+v_i = \frac{x_{i+1}-x_{i-1}}{t_{i+1} -t_{i-1}}
+\end{equation}
+\noindent
+
+Para cada valor de velocidade também podemos calcular a incerteza associada mediante a fórmula de propagação de incertezas. Desprezando a incerteza na determinação do tempo, obtemos:\begin{equation}
+\delta^2_{v_i} = \frac{\delta^2_{x_{i+1}}+\delta^2_{x_{i-1}}}{(t_{i+1} -t_{i-1})^2}
+\end{equation}
+\noindent
+onde $\delta_{x_{i+1}}$ e $\delta_{x_{i-1}}$ são as incertezas na determinação da posição ${x_{i+1}}$ e ${x_{i-1}}$ respectivamente.
+
+
