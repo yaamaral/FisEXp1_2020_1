@@ -20,4 +20,4 @@ git add .
 
 git commit -m "some text"
 
-git push
+git push origin master
